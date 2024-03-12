@@ -13,5 +13,6 @@ Commit 12 : About us class Move. about_us_p in addition Add. Footer info Add.
 Commit 13 : Splitter, Copyright Add. / Bug : Social media links 
 Commit 14 : Fix bug : Social media icon / link Add.
 Commit 15 : Media screen for width, footer container top column Add.
+Commit 16 : Fix bug: Body main from body mising
 
 

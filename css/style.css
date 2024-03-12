@@ -176,3 +176,24 @@
   .footer_info_spacing_items {
     margin: 0.5rem;
   }
+  .footer_socialm_spacing {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer_devider {
+    width: 100%;
+    height: 1px;
+    background-color: #e4ebf3;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .footer_bottom {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .footer_copyright {
+    color: #3a4554;
+  }

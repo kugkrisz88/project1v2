@@ -10,6 +10,6 @@ Commit 9 : Footer section image, button ,spacing Add.
 Commit 10 : Footer button style, hover, onclick effect Add.
 Commit 11 : Footer mid div properties, style About us Add.
 Commit 12 : About us class Move. about_us_p in addition Add. Footer info Add.
-
+Commit 13 : Splitter, Copyright Add. / Bug : Social media links 
 
 

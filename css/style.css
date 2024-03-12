@@ -197,3 +197,14 @@
   .footer_copyright {
     color: #3a4554;
   }
+  @media only screen and (max-width: 960px) {
+    .heading_container , .footer_container {
+        width: auto;
+    }
+  }
+  @media only screen and (max-width: 710px) {
+    .footer_top_container {
+        flex-direction: column;
+        align-items: center;
+    }
+  }

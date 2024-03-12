@@ -7,3 +7,4 @@ Commit 6 : Glassy effect to Heading H1 and P Add.
 Commit 7 : Specific button properties, style, glassy effect, onhover,onclick style Add.
 Commit 8 : Media screen for responsive buttons in heading change to column Add.
 Commit 9 : Footer section image, button ,spacing Add.
+Commit 10 : Footer button style, hover, onclick effect Add.

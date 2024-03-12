@@ -61,6 +61,7 @@
     margin: 30px;
 }
 .button {
+    display: inline-block;
     height: 42px;
     width: 120px;
     background-color: rgba(0, 0, 0, 0.484);
@@ -68,9 +69,12 @@
     border-style: none;
     color: white;
     font-size: 2rem;
-    margin: 30px;
     font-family: gearfont;
+    margin: 30px;
     cursor: pointer;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
 }
 .button:hover {
     background-color: rgba(255, 255, 255, 0.484);
@@ -128,18 +132,19 @@
   }
   .footer_button {
     height: 40px;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    font-family: gearfont;
-    background-color: rgba(0, 0, 0, 0.562);
+    width: 220px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.484);
     backdrop-filter: blur(7px);
     border-style: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-family: gearfont;
+    
     cursor: pointer;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
   }
   .footer_button:hover {
     background-color: rgba(255, 255, 255, 0.484);

@@ -17,7 +17,7 @@ Commit 16 : Fix bug: Body main from body mising
 Commit 17 : Small change: style ,content Adjust. Extermal links on target="_blank". Heading, Footer Complete.
 Commit 18 : menu , games , news HTML Create. Footer, Heading frame Copy/Paste. CSS file path Adjust.
 Commit 19 : All buttons to <a> Change. Related CSS Adjust. HTML files from HTML folder to main directory Move. Internal links(nav) Complete.
-
+Commit 20 : Fix Bug : Button text Media screen line-height for adjustment Add.
 
 
 

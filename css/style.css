@@ -1,4 +1,12 @@
 /* General Style */
+
+:root {
+    --heading-background-index: url(../image/header_background.jpg);
+    --heading-background-menu: url(../image/header_background_menu.jpg);
+    --heading-background-games: url(../image/header_background_gaming.jpg);
+    --heading-background-news: url(../image/header_background_news.jpg);
+}
+
 .body_main {
     background: linear-gradient(rgba(182, 180, 76, 0.299) , rgba(126, 125, 125, 0.688));
     display: flex;
@@ -15,7 +23,7 @@
     font-family: gearfont;
     height: 30rem;
     width: 60rem;
-    background-image: url(../image/header_background.jpg);
+    background-image: var(--heading-background-index);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -25,6 +33,16 @@
     border-radius: 20px 20px 30px 30px;
     margin-bottom: 2rem;
     margin-top: 1rem;
+}
+/*Background Image Override*/
+body.menu .heading_container {
+    background-image: var(--heading-background-menu);
+}
+body.games .heading_container {
+    background-image: var(--heading-background-games);
+}
+body.news .heading_container {
+    background-image: var(--heading-background-news);
 }
 .glassframe {
     width: auto;
@@ -136,7 +154,7 @@
     height: 40px;
     width: 220px;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.484);
+    background-color: rgba(0, 0, 0, 0.715);
     backdrop-filter: blur(7px);
     border-style: none;
     color: white;

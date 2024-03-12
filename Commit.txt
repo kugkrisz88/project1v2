@@ -2,3 +2,4 @@ Commit 1 : Create repository
 Commit 2 : Create folders, files. Add HTML base structure.
 Commit 3 : Heading, Nav Create.
 Commit 4 : General style, Heading Style ,gearfont-Font family Add.
+Commit 5 : Images, Fix width, Background for heading container, basic spacings and display Add.

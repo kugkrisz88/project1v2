@@ -23,5 +23,6 @@ Commit 22 : Big changes. Menu tested on separate HTML page to avoid confusion an
 Commit 23 : Menu pictures Add. All menu items copy/pasted Add.
 Commit 24 : Menu header, picture Add. Menu cards Modify, Style Add. Media screen Add.
 Commit 25 : Images Add. Content on index.html Add.
+Commit 26 : News form base structure, content , style Add.
 
 

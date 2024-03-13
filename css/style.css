@@ -299,10 +299,10 @@ body.news .heading_container {
 }
 .menu_font_background {
     background-image: url(../image/bbgear.png);
-    background-size: 200px; /* Adjusts the background image to cover the entire element */
-    background-position: center center; /* Centers the background image */
+    background-size: 200px;
+    background-position: center center; 
     background-repeat: no-repeat;
-    min-height: 200px; /* Adjust the minimum height as needed */
+    min-height: 200px; 
     opacity: 80%;
 }
 .menu_font_properties_h3 {
@@ -362,3 +362,80 @@ body.news .heading_container {
         
     }
 }
+/* News Styling */
+.register_starter_p {
+    font-family: gearfont;
+    color: #fff;
+    text-align: center;
+}
+
+.register_main_display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: gearfont; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+  }
+  
+  .register_container {
+    background-color: #9f904443;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .register_h1 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  
+  input[type="email"], select, input[type="text"], textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  textarea::placeholder,
+  input[type="email"]::placeholder,
+  input[type="text"]::placeholder {
+    color: #999;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  .success_message {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .register_submit_button {
+    font-family: gearfont;
+  }
+  
+  

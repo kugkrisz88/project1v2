@@ -20,6 +20,6 @@ Commit 19 : All buttons to <a> Change. Related CSS Adjust. HTML files from HTML 
 Commit 20 : Fix Bug : Button text Media screen line-height for adjustment Add.
 Commit 21 : root and overwrite CSS rule for all HTML to change background on current Add.
 Commit 22 : Big changes. Menu tested on separate HTML page to avoid confusion and for more clarity in the code. Menu item card,style,image,spacings Add.
-
+Commit 23 : Menu pictures Add. All menu items copy/pasted Add.
 
 

@@ -27,5 +27,6 @@ Commit 26 : News form base structure, content , style Add.
 Commit 27 : General content plate styling CSS from menu plating Create.
 Commit 28 : index.html content, style based on General plate style Complete.
 Commit 29 : gaming.html content , style based on General plate style Complete.
+Commit 30 : gaming page h2 style Adjust.
 
 

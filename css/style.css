@@ -1,527 +1,651 @@
 /* General Style */
-
+/* Sets root variables for different heading background images */
 :root {
-    --heading-background-index: url(../image/header_background.jpg);
-    --heading-background-menu: url(../image/header_background_menu.jpg);
-    --heading-background-games: url(../image/header_background_gaming.jpg);
-    --heading-background-news: url(../image/header_background_news.jpg);
+  --heading-background-index: url(../image/header_background.jpg);
+  --heading-background-menu: url(../image/header_background_menu.jpg);
+  --heading-background-games: url(../image/header_background_gaming.jpg);
+  --heading-background-news: url(../image/header_background_news.jpg);
 }
 
+/* Styling for the main body */
 .body_main {
-    background: linear-gradient(rgba(182, 180, 76, 0.299) , rgba(126, 125, 125, 0.688));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+  background: linear-gradient(rgba(182, 180, 76, 0.299) , rgba(126, 125, 125, 0.688));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* Font-face declaration for custom font */
 @font-face {
-    font-family: gearfont;
-    src:url(jackofgears.ttf)
+  font-family: gearfont;
+  src:url(jackofgears.ttf);
 }
-/* Heading Style */
+
+/* Styling for the heading container */
 .heading_container {
-    font-family: gearfont;
-    height: 30rem;
-    width: 60rem;
-    background-image: var(--heading-background-index);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 20px 20px 30px 30px;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+  font-family: gearfont;
+  height: 30rem;
+  width: 60rem;
+  background-image: var(--heading-background-index);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px 20px 30px 30px;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
-/*Background Image Override*/
+
+/* Overrides background image based on body class */
 body.menu .heading_container {
-    background-image: var(--heading-background-menu);
+  background-image: var(--heading-background-menu);
 }
+
 body.games .heading_container {
-    background-image: var(--heading-background-games);
+  background-image: var(--heading-background-games);
 }
+
 body.news .heading_container {
-    background-image: var(--heading-background-news);
+  background-image: var(--heading-background-news);
 }
+
+/* Styling for glass frame effect */
 .glassframe {
-    width: auto;
-    height: auto;
-    background: rgba(255, 255, 255, 0.566);
-    backdrop-filter: blur(7px);
-    color: rgb(57, 57, 57);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.645);
-    padding: 1rem;
-    text-align: center;
-    font-size: 1.5rem; 
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.566);
+  backdrop-filter: blur(7px);
+  color: rgb(57, 57, 57);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.645);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
+
+/* Styling for button container */
 .button_container {
-    display: flex; 
-    flex-direction: row;
-    align-items: center; 
-    user-select: none; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  user-select: none;
 }
+
+/* Styling for current active button */
 .button_current {
-    height: 42px;
-    width: 120px;
-    font-family: gearfont;
-    border-color: white;
-    border-style: solid;
-    background-color: rgba(255, 253, 253, 0.09);
-    backdrop-filter: blur(7px);
-    font-size: 2rem;
-    color: gold;
-    margin: 30px;
+  height: 42px;
+  width: 120px;
+  font-family: gearfont;
+  border-color: white;
+  border-style: solid;
+  background-color: rgba(255, 253, 253, 0.09);
+  backdrop-filter: blur(7px);
+  font-size: 2rem;
+  color: gold;
+  margin: 30px;
 }
+
+/* Styling for buttons */
 .button {
-    display: inline-block;
-    height: 42px;
-    width: 120px;
-    background-color: rgba(0, 0, 0, 0.484);
-    backdrop-filter: blur(7px);
-    border-style: none;
-    color: white;
-    font-size: 2rem;
-    font-family: gearfont;
-    margin: 30px;
-    cursor: pointer;
-    text-align: center;
-    line-height: 45px;
-    text-decoration: none;
+  display: inline-block;
+  height: 42px;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.484);
+  backdrop-filter: blur(7px);
+  border-style: none;
+  color: white;
+  font-size: 2rem;
+  font-family: gearfont;
+  margin: 30px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 45px;
+  text-decoration: none;
 }
+
+/* Hover effect for buttons */
 .button:hover {
-    background-color: rgba(255, 255, 255, 0.484);
-    color: gold;
+  background-color: rgba(255, 255, 255, 0.484);
+  color: gold;
 }
+
+/* Active state styling for buttons */
 .button:active {
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+/* Media query for responsiveness */
 @media only screen and (max-width: 710px) {
-    .button_current , .button {
-        margin: 5px;
-        height: 22px;
-        width: 80px;
-        font-size:1.2rem ;
-    }
-    .button {
-        line-height: 28px;
-    }
-    .button_container {
-        display: flex;
-        flex-direction: column;
-    }
+  .button_current , .button {
+      margin: 5px;
+      height: 22px;
+      width: 80px;
+      font-size:1.2rem ;
+  }
+  .button {
+      line-height: 28px;
+  }
+  .button_container {
+      display: flex;
+      flex-direction: column;
+  }
 }
 /* Footer Styling */
-  .footer_container {
-    width: 60rem;
-    margin-top: 2rem;
-  }
-  .footer_background {
-    background-image: url(../image/footer_background.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 50px;
-  }
-  .footer_top_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    
-    background: rgba(255, 255, 255, 0.404);
-    backdrop-filter: blur(7px);
-    color: rgb(57, 57, 57);
-    
-    border-radius: 16px 16px 0 0 ;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-    margin-bottom: 20px;
-  }
-  .footer_subscribe_text {
-    font-size: 24px;
-    line-height: 32px;
-    margin-right: 15px;
-    font-family: gearfont;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .footer_button {
-    height: 40px;
-    width: 220px;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.715);
-    backdrop-filter: blur(7px);
-    border-style: none;
-    color: white;
-    font-size: 2rem;
-    font-family: gearfont;
-    
-    cursor: pointer;
-    text-align: center;
-    line-height: 45px;
-    text-decoration: none;
-  }
-  .footer_button:hover {
-    background-color: rgba(255, 255, 255, 0.484);
-    color: gold;
-  }
-  .footer_button:active {
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-}
-  .footer_mid_container{
-    margin-top: 15rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 
-    background: rgba(255, 255, 255, 0.404);
-    backdrop-filter: blur(7px);
-    color: rgb(57, 57, 57);
+/* Styling for the footer container */
+.footer_container {
+  width: 60rem;
+  margin-top: 2rem;
+}
+
+/* Styling for the background of the footer */
+.footer_background {
+  background-image: url(../image/footer_background.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+}
+
+/* Styling for the top section of the footer */
+.footer_top_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.404);
+  backdrop-filter: blur(7px);
+  color: rgb(57, 57, 57);
+  border-radius: 16px 16px 0 0 ;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  margin-bottom: 20px;
+}
+
+/* Styling for the text in the subscribe section of the footer */
+.footer_subscribe_text {
+  font-size: 24px;
+  line-height: 32px;
+  margin-right: 15px;
+  font-family: gearfont;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* Styling for the subscribe button in the footer */
+.footer_button {
+  height: 40px;
+  width: 220px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.715);
+  backdrop-filter: blur(7px);
+  border-style: none;
+  color: white;
+  font-size: 2rem;
+  font-family: gearfont;
+  cursor: pointer;
+  text-align: center;
+  line-height: 45px;
+  text-decoration: none;
+}
+
+/* Styling for the hover effect on the subscribe button */
+.footer_button:hover {
+  background-color: rgba(255, 255, 255, 0.484);
+  color: gold;
+}
+
+/* Styling for the active state of the subscribe button */
+.footer_button:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the middle section of the footer */
+.footer_mid_container {
+  margin-top: 15rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  background: rgba(255, 255, 255, 0.404);
+  backdrop-filter: blur(7px);
+  color: rgb(57, 57, 57);
+}
+
+/* Styling for the "about us" text */
+.about_us {
+  text-align: center;
+  font-family: gearfont;
+  text-decoration: underline;
+}
+
+/* Styling for paragraphs in the "about us" section */
+.about_us_p {
+  text-align: center;
+}
+
+/* Styling for the "contact info" text */
+.contact_info {
+  text-align: center;
+  font-family: gearfont;
+  text-decoration: underline;
+}
+
+/* Styling for spacing of footer information */
+.footer_info_spacing {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Styling for individual items in footer information */
+.footer_info_spacing_items {
+  margin: 0.5rem;
+}
+
+/* Styling for emphasized text */
+em {
+  font-family: gearfont;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+/* Styling for spacing of social media icons */
+.footer_socialm_spacing {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Styling for the divider line */
+.footer_devider {
+  width: 100%;
+  height: 1px;
+  background-color: #e4ebf3;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Styling for the bottom section of the footer */
+.footer_bottom {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Styling for the copyright text */
+.footer_copyright {
+  color: #3a4554;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 960px) {
+  .heading_container, .footer_container, .main_container {
+    width: auto;
   }
-  .about_us {
-    text-align: center;
-    font-family: gearfont;
-    text-decoration: underline;
-  }
-  .about_us_p {
-    text-align: center;
-  }
-  .contact_info {
-    text-align: center;
-    font-family: gearfont;
-    text-decoration: underline;
-  }
-  .footer_info_spacing {
-    display: flex;
+}
+
+/* Media query for even smaller screens */
+@media only screen and (max-width: 710px) {
+  .footer_top_container {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
   }
-  .footer_info_spacing_items {
-    margin: 0.5rem;
-  }
-  em {
-    font-family: gearfont;
-    text-decoration: underline;
-    font-size: 1.2rem;
-  }
-  .footer_socialm_spacing {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .footer_devider {
-    width: 100%;
-    height: 1px;
-    background-color: #e4ebf3;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  .footer_bottom {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-  .footer_copyright {
-    color: #3a4554;
-  }
-  @media only screen and (max-width: 960px) {
-    .heading_container , .footer_container , .main_container{
-        width: auto;
-    }
-  }
-  @media only screen and (max-width: 710px) {
-    .footer_top_container {
-        flex-direction: column;
-        align-items: center;
-    }
-  }
+}
   /* Main styling */
   .main_container {
     width: 60rem;
   }
 
   /*Menu Styling */
-  .pricing_items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+/* Styling for pricing items container */
+.pricing_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* Styling for individual item container */
 .item_container {
-    max-width: 800px;
-    
+  max-width: 800px;
 }
-.pricing_card_left , .pricing_card_left_topcut{
-    background:linear-gradient(90deg , rgba(121, 91, 30, 0.114) , rgba(255, 217, 0, 0.344) , rgba(0, 0, 0, 0.201));
-    
-    backdrop-filter: blur(7px);
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.645);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    padding: 24px;
-    margin-bottom: 30px;
-    flex-direction: row;
-}
+
+/* Styling for pricing cards */
+.pricing_card_left,
 .pricing_card_left_topcut {
-    border-radius: 0px 0px 30px 30px;
+  background: linear-gradient(90deg, rgba(121, 91, 30, 0.114), rgba(255, 217, 0, 0.344), rgba(0, 0, 0, 0.201));
+  backdrop-filter: blur(7px);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.645);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  margin-bottom: 30px;
+  flex-direction: row;
 }
+
+/* Additional styling for pricing card with top cut */
+.pricing_card_left_topcut {
+  border-radius: 0px 0px 30px 30px;
+}
+
+/* Styling for pricing image */
 .pricing_image {
-    max-width: 20%;
-    margin-right: 40px;
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.645);
-    margin-right: 20px;
+  max-width: 20%;
+  margin-right: 40px;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.645);
+  margin-right: 20px;
 }
+
+/* Styling for pricing content */
 .pricing_content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* Styling for pricing content paragraphs */
 .pricing_content p {
-    margin: 0;
+  margin: 0;
 }
+
+/* Styling for pricing divider */
 .pricing_divider {
-    height: 1px;
-    background-color: #e4ebf3;
-    margin: 9px -16px 16px;
+  height: 1px;
+  background-color: #e4ebf3;
+  margin: 9px -16px 16px;
 }
+
+/* Styling for pricing details */
 .pricing_details {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
+
+/* Styling for pricing block */
 .pricing_block {
-    margin-bottom: -10px;
+  margin-bottom: -10px;
 }
+
+/* Styling for menu font background */
 .menu_font_background {
-    background-image: url(../image/bbgear.png);
-    background-size: 200px;
-    background-position: center center; 
-    background-repeat: no-repeat;
-    min-height: 200px; 
-    opacity: 80%;
+  background-image: url(../image/bbgear.png);
+  background-size: 200px;
+  background-position: center center; 
+  background-repeat: no-repeat;
+  min-height: 200px; 
+  opacity: 80%;
 }
+
+/* Styling for menu font properties h3 */
 .menu_font_properties_h3 {
-    color: rgb(0, 0, 0);
-    font-family: gearfont;
-    text-align: center;
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    line-height: 200px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+  color: rgb(0, 0, 0);
+  font-family: gearfont;
+  text-align: center;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
+
+/* Styling for menu font properties h2 */
 .menu_font_properties_h2 {
-    color:rgba(0, 0, 0, 0.448);
-    font-family: gearfont;
-    text-align: center;
-    font-size: 4rem;
-    background:linear-gradient(90deg , rgba(121, 91, 30, 0.114) , rgba(255, 217, 0, 0.344) , rgba(0, 0, 0, 0.201));
-    backdrop-filter: blur(7px);
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.645);
-    border-radius: 30px 30px 0px 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+  color: rgba(0, 0, 0, 0.448);
+  font-family: gearfont;
+  text-align: center;
+  font-size: 4rem;
+  background: linear-gradient(90deg, rgba(121, 91, 30, 0.114), rgba(255, 217, 0, 0.344), rgba(0, 0, 0, 0.201));
+  backdrop-filter: blur(7px);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.645);
+  border-radius: 30px 30px 0px 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
+
+/* Media query for smaller screens */
 @media screen and (max-width: 767px) {
-    .pricing_items {
-        padding: 30px 15px;
-    }
-    .pricing_card_left , .pricing_card_left_topcut {
-        flex-direction: column;
-        align-items: center;
-    }
-    .pricing_image {
-        max-width: 70%;
-        margin-bottom: 30px;
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width: 479px) {
-    .item_container {
-        max-width: none;
-    }
-    .pricing_card_left , .pricing_card_left_topcut{
-        padding: 15px;
-    }
-    .pricing_details {
-        flex-direction: column;
-        margin-bottom: -10px;
-    }
-    .pricing_block {
-        margin-bottom: 10px;
-    }
-    .menu_font_properties_h3 , .menu_font_background {
-        font-size: 2.5rem;
-        
-    }
-}
-/* News Styling */
-.register_starter_p {
-    font-family: gearfont;
-    color: #fff;
-    text-align: center;
-}
-
-.register_main_display {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: gearfont; 
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0;
+  .pricing_items {
+    padding: 30px 15px;
   }
-  
-  .register_container {
-    background-color: #9f904443;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-  }
-  
-  .register_h1 {
-    color: #ffffff;
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 8px;
-    color: #ffffff;
-  }
-  
-  input[type="email"], select, input[type="text"], textarea {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  textarea::placeholder,
-  input[type="email"]::placeholder,
-  input[type="text"]::placeholder {
-    color: #999;
-  }
-  
-  input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #555;
-  }
-  
-  .success_message {
-    margin-top: 20px;
-    font-weight: bold;
-  }
-
-  .register_submit_button {
-    font-family: gearfont;
-  }
-  /* General Content Plate Styling */
-  .platecard_items {
-    display: flex;
+  .pricing_card_left,
+  .pricing_card_left_topcut {
     flex-direction: column;
     align-items: center;
-}
-.item_container {
-    max-width: 800px;
-}
-.platecard_card_left , .platecard_card_left_topcut , .platecard_card_reverse{
-    background:linear-gradient(90deg , rgba(121, 91, 30, 0.114) , rgba(255, 217, 0, 0.344) , rgba(0, 0, 0, 0.201));
-    backdrop-filter: blur(7px);
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.645);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    padding: 24px;
+  }
+  .pricing_image {
+    max-width: 70%;
     margin-bottom: 30px;
-    flex-direction: row;
+    margin-right: 0;
+  }
 }
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 479px) {
+  .item_container {
+    max-width: none;
+  }
+  .pricing_card_left,
+  .pricing_card_left_topcut {
+    padding: 15px;
+  }
+  .pricing_details {
+    flex-direction: column;
+    margin-bottom: -10px;
+  }
+  .pricing_block {
+    margin-bottom: 10px;
+  }
+  .menu_font_properties_h3,
+  .menu_font_background {
+    font-size: 2.5rem;
+  }
+}
+ /* News Styling */
+/* Styling for register starter paragraph */
+.register_starter_p {
+  font-family: gearfont;
+  color: #fff;
+  text-align: center;
+}
+
+/* Styling for main display of register section */
+.register_main_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: gearfont; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+/* Styling for register container */
+.register_container {
+  background-color: #9f904443;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Styling for register heading */
+.register_h1 {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Styling for labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+/* Styling for form inputs */
+input[type="email"],
+select,
+input[type="text"],
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Styling for placeholders */
+textarea::placeholder,
+input[type="email"]::placeholder,
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+/* Styling for submit button */
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Styling for hover effect on submit button */
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Styling for success message */
+.success_message {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Styling for register submit button */
+.register_submit_button {
+  font-family: gearfont;
+}
+ /* General Content Plate Styling */
+
+/* Styling for platecard items container */
+.platecard_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for individual item container */
+.item_container {
+  max-width: 800px;
+}
+
+/* Styling for platecard cards */
+.platecard_card_left,
+.platecard_card_left_topcut,
+.platecard_card_reverse {
+  background: linear-gradient(90deg, rgba(121, 91, 30, 0.114), rgba(255, 217, 0, 0.344), rgba(0, 0, 0, 0.201));
+  backdrop-filter: blur(7px);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.645);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  margin-bottom: 30px;
+  flex-direction: row;
+}
+
+/* Additional styling for platecard card with top cut */
 .platecard_card_left_topcut {
-    border-radius: 0px 0px 30px 30px;
+  border-radius: 0px 0px 30px 30px;
 }
+
+/* Additional styling for platecard card with reverse direction */
 .platecard_card_reverse {
   flex-direction: column-reverse;
 }
+
+/* Styling for platecard image */
 .platecard_image {
-    max-width: 40%;
-    margin-right: 40px;
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.645);
-    margin-right: 20px;
+  max-width: 40%;
+  margin-right: 40px;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.645);
+  margin-right: 20px;
 }
+
+/* Styling for platecard details */
 .platecard_details {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-family: gearfont;
-    font-size: large;
-    text-align: center;
-    margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: gearfont;
+  font-size: large;
+  text-align: center;
+  margin: 15px;
 }
+
+/* Styling for platecard block */
 .platecard_block {
-    margin-bottom: -10px;
+  margin-bottom: -10px;
 }
+
+/* Styling for gaming heading */
 .gaming_h2 {
-  color:rgba(0, 0, 0, 0.448);
-    font-family: gearfont;
-    text-align: center;
-    font-size: 4rem;
-    background:linear-gradient(90deg , rgba(121, 91, 30, 0.114) , rgba(255, 217, 0, 0.344) , rgba(0, 0, 0, 0.201));
-    backdrop-filter: blur(7px);
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.645);
-    border-radius: 30px 30px 0px 0px;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    padding: 10px;
+  color: rgba(0, 0, 0, 0.448);
+  font-family: gearfont;
+  text-align: center;
+  font-size: 4rem;
+  background: linear-gradient(90deg, rgba(121, 91, 30, 0.114), rgba(255, 217, 0, 0.344), rgba(0, 0, 0, 0.201));
+  backdrop-filter: blur(7px);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.645);
+  border-radius: 30px 30px 0px 0px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  padding: 10px;
 }
 
+/* Media query for smaller screens */
 @media screen and (max-width: 767px) {
-    .platecard_items {
-        padding: 30px 15px;
-    }
-    .platecard_card_left , .platecard_card_left_topcut {
-        flex-direction: column;
-        align-items: center;
-    }
-    .platecard_image {
-        max-width: 70%;
-        margin-bottom: 30px;
-        margin-right: 0;
-    }
+  .platecard_items {
+    padding: 30px 15px;
+  }
+  .platecard_card_left,
+  .platecard_card_left_topcut {
+    flex-direction: column;
+    align-items: center;
+  }
+  .platecard_image {
+    max-width: 70%;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
 }
 
+/* Media query for even smaller screens */
 @media screen and (max-width: 479px) {
-    .item_container {
-        max-width: none;
-    }
-    .platecard_card_left , .platecard_card_left_topcut{
-        padding: 15px;
-    }
-    .platecard_details {
-        flex-direction: column;
-        margin-bottom: -10px;
-    }
-    .platecard_block {
-        margin-bottom: 10px;
-    }
+  .item_container {
+    max-width: none;
+  }
+  .platecard_card_left,
+  .platecard_card_left_topcut {
+    padding: 15px;
+  }
+  .platecard_details {
+    flex-direction: column;
+    margin-bottom: -10px;
+  }
+  .platecard_block {
+    margin-bottom: 10px;
+  }
 }

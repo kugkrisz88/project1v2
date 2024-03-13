@@ -22,5 +22,6 @@ Commit 21 : root and overwrite CSS rule for all HTML to change background on cur
 Commit 22 : Big changes. Menu tested on separate HTML page to avoid confusion and for more clarity in the code. Menu item card,style,image,spacings Add.
 Commit 23 : Menu pictures Add. All menu items copy/pasted Add.
 Commit 24 : Menu header, picture Add. Menu cards Modify, Style Add. Media screen Add.
+Commit 25 : Images Add. Content on index.html Add.
 
 

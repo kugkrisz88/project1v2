@@ -30,4 +30,4 @@ Commit 29 : gaming.html content , style based on General plate style Complete.
 Commit 30 : gaming page h2 style Adjust.
 Commit 31 : Audio player with audio Add.
 Commit 32 : Functionality of CSS Comment out. Small spelling mistakes and prices Adjust. Page Complete.
-
+Commit 33 : Stray div Remove. Heading to Header Change. Markup validation Error Fix.
